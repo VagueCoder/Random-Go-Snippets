@@ -61,13 +61,13 @@ endif
 
 ######################################################################################
 
-##################################### APPLICATION ####################################
+#################################### Fast-Fibonacci ##################################
 
 run_fast_fibonacci:
-	@go build -o=${GOBIN}/fast_fibonacci ${REPO_ROOT}/Fast-Fibnacci;
+	@go build -o=${GOBIN}/fast_fibonacci ${REPO_ROOT}/Fast-Fibonacci;
 	${GOBIN}/fast_fibonacci;
 
 test_fast_fibonacci:
-	go test -v ./...
+	go test -v ${REPO_ROOT}/Fast-Fibonacci/...
 
 ######################################################################################
