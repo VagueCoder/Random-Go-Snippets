@@ -71,3 +71,14 @@ test_fast_fibonacci:
 	go test -v ${REPO_ROOT}/Fast-Fibonacci/...
 
 ######################################################################################
+
+############################ Files-Filtered-By-Time-Window ###########################
+
+run_files_filtered:
+	@go build -o=${GOBIN}/files_filtered ${REPO_ROOT}/Files-Filtered-By-Time-Window;
+	${GOBIN}/files_filtered ${REPO_ROOT}/Files-Filtered-By-Time-Window/files;
+
+test_files_filtered:
+	go test -v ${REPO_ROOT}/Files-Filtered-By-Time-Window/...
+
+######################################################################################
