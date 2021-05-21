@@ -11,6 +11,6 @@ Sno. | Name | Gist | Comment
 
 ---
 
-For any issues, queries or discussions, please update in issues menu or write to [`vaguecoder0to.n@gmail.com`](mainto:vaguecoder0to.n@gmail.com).
+For any issues, queries or discussions, please update in issues menu or write to [`vaguecoder0to.n@gmail.com`](mailto:vaguecoder0to.n@gmail.com).
 
 ## Happy Coding !! :metal:
