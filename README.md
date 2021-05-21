@@ -1,13 +1,14 @@
 # Random-Go-Snippets
-This is collection of modular code structured in project, of Golang related snippets in my [Gists](https://gist.github.com/VagueCoder) collection. Approach is constructive.
+A collection of modular code of Golang related snippets, structured into projects. The snippets are originally shared on my [GitHub Gists](https://gist.github.com/VagueCoder). Approach is constructive.
 
-Gists are for sharing the code snippet. This is a better explanation of each.
+Gists are for sharing the code snippets (similar to [Go Playground](https://play.golang.org/)). This is a better explanation of each gist, so rookies to the concept can better understand on how to embed.
 
 ## Index
 Sno. | Name | Gist | Comment
 ----:|:----:|:-----|:-------
 1 | [Fast-Fibonacci](Fast-Fibonacci) | [fastFibonacci.go](https://gist.github.com/VagueCoder/03ecd15c42666cb7594790fa263e532f) | Basic fibonacci code snippet with works in goroutines which doesn't give whole series, but nth number. Also included time module to calculate TAT.
 2 | [Files-Filtered-By-Time-Window](Files-Filtered-By-Time-Window) | [filesFilteredByTimeWindow.go](https://gist.github.com/VagueCoder/f4ad2a875464e05bc16ac8ef88d79067) | Filters files based on the modified date (start and end time).
+3 | [Formatted-Time-Marshalling](Formatted-Time-Marshalling) | [formattedTimeMarshalling.go](https://gist.github.com/VagueCoder/5402cadf0707afbbfccc0e0c3abb650a) | Overrides the marshaller function to marshal time.Time object to a specific formatted time string, similar to: "21-May-2021 23:20:08 IST".
 
 ---
 

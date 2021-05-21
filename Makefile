@@ -82,3 +82,14 @@ test_files_filtered:
 	go test -v ${REPO_ROOT}/Files-Filtered-By-Time-Window/...
 
 ######################################################################################
+
+############################# Formatted-Time-Marshalling #############################
+
+run_formatted_time_marshalling:
+	@go build -o=${GOBIN}/formatted_time_marshalling ${REPO_ROOT}/Formatted-Time-Marshalling;
+	${GOBIN}/formatted_time_marshalling;
+
+test_formatted_time_marshalling:
+	go test -v ${REPO_ROOT}/Formatted-Time-Marshalling/...
+
+######################################################################################
