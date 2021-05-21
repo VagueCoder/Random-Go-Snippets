@@ -13,6 +13,6 @@ Sno. | Name | Gist | Comment
 
 For any issues, queries or discussions, please update in issues menu or write to 
 >>
-<a href="mailto:vaguecoder0to.n@gmail.com">`vaguecoder0to.n@gmail.com`</a>
+<a href="mailto:vaguecoder0to.n@gmail.com?subject=Technical%20Discussion&body=Hello%20Vague%20Coder,%0A%0A" target="_blank">`vaguecoder0to.n@gmail.com`</a>
 
 ## Happy Coding !! :metal:
