@@ -1,13 +1,14 @@
 package main
 
 import (
+	"context"
 	"fmt"
 	"math/rand"
 	"os"
 	"strconv"
 	"time"
 
-	"github.com/VagueCoder/Random-Go-Snippets/Random-Strings/randomStrings"
+	rs "github.com/VagueCoder/Random-Go-Snippets/Random-Strings/randomStrings"
 )
 
 var err error
@@ -25,8 +26,14 @@ func main() {
 		count = 10
 	}
 
+	ctx := context.Background()
+	ctx, cancel := context.WithCancel(ctx)
+	ch := make(chan string, count)
+	go rs.RandomString(ctx, ch, 10)
+
 	rand.Seed(time.Now().UnixNano())
 	for i := 0; i < count; i++ {
-		fmt.Println(randomStrings.RandomString(10))
+		fmt.Println(<-ch)
 	}
+	cancel()
 }

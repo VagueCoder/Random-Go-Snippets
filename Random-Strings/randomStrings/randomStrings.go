@@ -1,6 +1,7 @@
 package randomStrings
 
 import (
+	"context"
 	"math/rand"
 )
 
@@ -10,10 +11,12 @@ func randInt(min int, max int) int {
 }
 
 // RandomString returns random string with the requested size.
-func RandomString(size int) string {
-	bytes := make([]byte, size)
-	for i := 0; i < size; i++ {
-		bytes[i] = byte(randInt(65, 90))
+func RandomString(ctx context.Context, ch chan<- string, size int) {
+	for {
+		bytes := make([]byte, size)
+		for i := 0; i < size; i++ {
+			bytes[i] = byte(randInt(65, 90))
+		}
+		ch <- string(bytes)
 	}
-	return string(bytes)
 }
