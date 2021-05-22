@@ -93,3 +93,14 @@ test_formatted_time_marshalling:
 	go test -v ${REPO_ROOT}/Formatted-Time-Marshalling/...
 
 ######################################################################################
+
+################################### Random-Strings ###################################
+
+run_random_strings:
+	@go build -o=${GOBIN}/random_strings ${REPO_ROOT}/Random-Strings;
+	${GOBIN}/random_strings;
+
+test_random_strings:
+	go test -v ${REPO_ROOT}/Random-Strings/...
+
+######################################################################################
