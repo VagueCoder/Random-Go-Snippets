@@ -14,10 +14,6 @@ Sno. | Name | Gist | Comment
 6 | [Go-HashMap](Go-HashMap) | [Go-HashMap.go](https://gist.github.com/VagueCoder/3a93f51f5b98ee4537e864fcb49593d7) | Simple demonstration of usage of `map[interface{}]interface{}` as an HashMap in Go. Gist only has insertion. Package implementation has all the possible known functions on HashMap (originally in Java).
 ---
 
- please update in issuesWrite to me at (Click): [VagueCoder0to.n@gmail.com](mailto:VagueCoder0to.n@gmail.com?subject=%5BGITHUB%3A%20Split-Video%5D%20Your%20Subject%20Here&body=Hello%20Vague%2C%0A%0A)
-
-## Happy Coding !! :metal:
-
 ## Message to Viewer
 A geek to geek: I'd be glad if this comes to use for someone. If you embed snippets from this project in your code, or if you wish to continue developing from here onwards, either ways I totally encourage it. I'm a big fan of open-sourcing. This is all yours to use, buddy!
 
