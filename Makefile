@@ -104,3 +104,25 @@ test_random_strings:
 	go test -v ${REPO_ROOT}/Random-Strings/...
 
 ######################################################################################
+
+##################################### Go-HashMap #####################################
+
+run_hashmap:
+	@go build -o=${GOBIN}/hashmap ${REPO_ROOT}/Go-HashMap;
+	${GOBIN}/hashmap;
+
+test_hashmap:
+	go test -v ${REPO_ROOT}/Go-HashMap/...
+
+######################################################################################
+
+################################ Message-Broadcaster #################################
+
+run_broadcaster:
+	@go build -o=${GOBIN}/broadcaster ${REPO_ROOT}/Message-Broadcaster;
+	${GOBIN}/broadcaster;
+
+test_broadcaster:
+	go test -v ${REPO_ROOT}/Message-Broadcaster/...
+
+######################################################################################

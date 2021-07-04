@@ -12,6 +12,7 @@ Sno. | Name | Gist | Comment
 4 | [Multilevel-JSON-Unmarshalling](https://github.com/VagueCoder/Multilevel-JSON-Unmarshalling) | [Multilevel-JSON-Unmarshalling.go](https://gist.github.com/VagueCoder/37086acb50919a95ef025e0f05c27b61) |  This takes JSON as object and returns slice of all the leaf key-value pairs in the structure. This doesn't preserve details of the depth, but just KVs of all levels.
 5 | [Random-Strings](Random-Strings) |  [randomStrings.go](https://gist.github.com/VagueCoder/779974d9616e6c108bcaf684c071833a) | This creates a channel which continuously processes and returns random strings of fixed (given) size. And processing can be cancelled at will.
 6 | [Go-HashMap](Go-HashMap) | [Go-HashMap.go](https://gist.github.com/VagueCoder/3a93f51f5b98ee4537e864fcb49593d7) | Simple demonstration of usage of `map[interface{}]interface{}` as an HashMap in Go. Gist only has insertion. Package implementation has all the possible known functions on HashMap (originally in Java).
+7 | [Message-Broadcaster](Message-Broadcaster) | [broadcast.go](https://gist.github.com/VagueCoder/e0ede95825b2a8a19553dd090404b028) | This creates a publisher goroutine which continuously returns message (of any type), and related operations.  
 ---
 
 ## Message to Viewer
