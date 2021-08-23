@@ -1,8 +1,11 @@
 package fibonacci
 
-import "sync"
+import (
+	"sync"
+)
 
 func Fibonacci(n int) int {
+
 	var wg sync.WaitGroup
 	var mu sync.Mutex
 	var a, b int = 0, 1

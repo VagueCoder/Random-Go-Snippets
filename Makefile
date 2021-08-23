@@ -61,68 +61,34 @@ endif
 
 ######################################################################################
 
-#################################### Fast-Fibonacci ##################################
-
-run_fast_fibonacci:
-	@go build -o=${GOBIN}/fast_fibonacci ${REPO_ROOT}/Fast-Fibonacci;
-	${GOBIN}/fast_fibonacci;
+#################################### Test-Cases ##################################
 
 test_fast_fibonacci:
 	go test -v ${REPO_ROOT}/Fast-Fibonacci/...
 
-######################################################################################
-
-############################ Files-Filtered-By-Time-Window ###########################
-
-run_files_filtered:
-	@go build -o=${GOBIN}/files_filtered ${REPO_ROOT}/Files-Filtered-By-Time-Window;
-	${GOBIN}/files_filtered ${REPO_ROOT}/Files-Filtered-By-Time-Window/files;
-
 test_files_filtered:
 	go test -v ${REPO_ROOT}/Files-Filtered-By-Time-Window/...
-
-######################################################################################
-
-############################# Formatted-Time-Marshalling #############################
-
-run_formatted_time_marshalling:
-	@go build -o=${GOBIN}/formatted_time_marshalling ${REPO_ROOT}/Formatted-Time-Marshalling;
-	${GOBIN}/formatted_time_marshalling;
 
 test_formatted_time_marshalling:
 	go test -v ${REPO_ROOT}/Formatted-Time-Marshalling/...
 
-######################################################################################
-
-################################### Random-Strings ###################################
-
-run_random_strings:
-	@go build -o=${GOBIN}/random_strings ${REPO_ROOT}/Random-Strings;
-	${GOBIN}/random_strings;
-
 test_random_strings:
 	go test -v ${REPO_ROOT}/Random-Strings/...
-
-######################################################################################
-
-##################################### Go-HashMap #####################################
-
-run_hashmap:
-	@go build -o=${GOBIN}/hashmap ${REPO_ROOT}/Go-HashMap;
-	${GOBIN}/hashmap;
 
 test_hashmap:
 	go test -v ${REPO_ROOT}/Go-HashMap/...
 
-######################################################################################
-
-################################ Message-Broadcaster #################################
-
-run_broadcaster:
-	@go build -o=${GOBIN}/broadcaster ${REPO_ROOT}/Message-Broadcaster;
-	${GOBIN}/broadcaster;
-
 test_broadcaster:
 	go test -v ${REPO_ROOT}/Message-Broadcaster/...
+
+test_find_gcd:
+	go test -v ${REPO_ROOT}/Find-GCD/...
+
+######################################################################################
+
+######################################## General #####################################
+
+clean_cache:
+	@go clean -cache ./... && echo "Bye-bye Cache!"
 
 ######################################################################################

@@ -16,5 +16,5 @@ func Start() {
 
 func End() {
 	end = time.Duration(time.Duration(time.Since(start)))
-	fmt.Printf("\nTotal time of execution: %v\n", end)
+	fmt.Printf("Total time for execution: %v\n", end)
 }

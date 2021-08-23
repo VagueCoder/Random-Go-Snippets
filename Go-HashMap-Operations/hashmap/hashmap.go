@@ -29,7 +29,7 @@ func (h *HashMap) Print() {
 	}
 
 	for k, v := range *h {
-		fmt.Printf(">>> %v (%T) -> %v (%T)\n\n", k, k, v, v)
+		fmt.Printf("\t%v (%T) -> %v (%T)\n", k, k, v, v)
 	}
 }
 

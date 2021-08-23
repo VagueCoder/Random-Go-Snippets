@@ -1,12 +1,12 @@
-package main
+package hashmapOps
 
 import (
 	"fmt"
 	"net/http"
 	"os"
 
-	"github.com/VagueCoder/Random-Go-Snippets/Go-HashMap/data"
-	"github.com/VagueCoder/Random-Go-Snippets/Go-HashMap/hashmap"
+	"github.com/VagueCoder/Random-Go-Snippets/Go-HashMap-Operations/data"
+	"github.com/VagueCoder/Random-Go-Snippets/Go-HashMap-Operations/hashmap"
 )
 
 // Person is a random struct type for demonstration purposes
@@ -16,7 +16,18 @@ type Person struct {
 	Phone string
 }
 
-func main() {
+func RunHashMapOperationsShort() {
+	// initialize HashMap
+	fmt.Println("Initialized HashMap:")
+	h := hashmap.NewHashMap()
+	fmt.Println("Put: (MyKey, MyVal)")
+	h.Put("MyKey", "MyVal")
+	fmt.Println("PutIfAbsent: (MyKey2, MyValInserted)")
+	h.PutIfAbsent("MyKey2", "MyValInserted")
+	fmt.Printf("Print HashMap: ")
+	h.Print()
+}
+func RunHashMapOperations() {
 	var key, val, Square, Default interface{}
 
 	// initialize HashMap

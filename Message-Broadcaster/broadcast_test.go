@@ -3,7 +3,7 @@ package broadcast_test
 import (
 	"testing"
 
-	"github.com/VagueCoder/Random-Go-Snippets/Message-Broadcaster/broadcast"
+	broadcast "github.com/VagueCoder/Random-Go-Snippets/Message-Broadcaster"
 	"github.com/stretchr/testify/assert"
 )
 

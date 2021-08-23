@@ -4,6 +4,8 @@ package broadcast
 
 import (
 	"context"
+	"fmt"
+	"sync"
 )
 
 // Channel is a custom type to hold channel and context variables.
@@ -74,4 +76,19 @@ func (c *Channel) Close() {
 // Exported. Returns true if channel is closed, else false.
 func (c *Channel) IsClosed() bool {
 	return <-c.ch == nil
+}
+
+// runConsumers runs given number of consumer goroutines to read messages.
+func RunConsumers(ch Channel, count int) func() {
+	wg := sync.WaitGroup{}
+	return func() {
+		for i := 0; i < count; i++ {
+			wg.Add(1)
+			go func(wg *sync.WaitGroup, i int) {
+				fmt.Printf("Message From Goroutine-%d: %v\n", i, ch.Read())
+				wg.Done()
+			}(&wg, i)
+		}
+		wg.Wait()
+	}
 }
